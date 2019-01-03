@@ -1,0 +1,10 @@
+- This project is focused on building a classifier to label images of handwrittedn digits. 
+- A dataset of 1100 images of each digit is also provided along in zip file. These images are divided in a ratio of 7:4 into training and test data.
+- Each image is 8 by 8 pixels and is grayscale.
+- Each image is converted into a vector of length 64 and these vectors are stored in provided zip file named digits-data.
+- The file load-data.py contains the functions required to fetch data in the required form to design the classifier. This can be tweaked if the dimensions of image are different.
+- The file digit-classifier.py implements the classifier based om Gaussian Discriminant analysis.
+- The resources to study formulae for generative likelihood and conditional likelihood are easily available on web. These formulae are needed to implement Gaussian Discriminant Analysis.
+- Generative likelihood = log(p(x|y)) ; condiditional likelihood: log(p(y|x), where x is input and y is predicted label.
+- The output of digit-classifier.py contains accuracies of training and test data, and plots of leading eigen vectors for each class covariance matrix.
+- Plotting other eigen vectors could help to get an intuitive understanding of how the classification works with Gaussian Discriminant Method.
